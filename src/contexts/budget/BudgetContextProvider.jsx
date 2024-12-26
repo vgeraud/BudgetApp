@@ -8,14 +8,15 @@ const BudgetContextProvider = ({ children }) => {
         "Bills & utilities": 65,
         "Groceries": 420,
         "Restaurants": 500,
-        "Pharmacy": 50,
+        "Pharmacy": 100,
         "Internet": 48,
         "Mobile phone": 28,
         "Music": 20,
         "Pets": 80,
         "Home supplies": 20,
         "Hairdresser": 52,
-        "Miscellaneous": 320,
+        "Miscellaneous": 350,
+        "Gym": 27
     });
 
     const value = {
