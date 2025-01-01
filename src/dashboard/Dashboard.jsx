@@ -4,15 +4,19 @@ import TransactionsContext from '../contexts/transactions/TransactionsContext';
 import TransactionsTable from './transactions/TransactionsTable';
 import BudgetSummary from './budget/BudgetSummary';
 import Menu from './components/Menu';
+import DatePicker from './components/DatePicker';
 
 const Dashboard = () => {
     const { transactions } = useContext(TransactionsContext);
 
     return (
         <Stack gap={5}>
-            <Flex justifyContent="space-between">
+            <Flex justifyContent="space-between" alignItems="center">
                 <Heading color="teal">BudgetApp</Heading>
-                <Menu />
+                <Flex marginLeft="auto">
+                    <DatePicker marginRight="8px" minWidth="200px" />
+                    <Menu />
+                </Flex>
             </Flex>
             {transactions?.length > 0 &&
                 <Tabs>

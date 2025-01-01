@@ -11,10 +11,10 @@ const BudgetContextProvider = ({ children }) => {
         "Pharmacy": 100,
         "Internet": 48,
         "Mobile phone": 28,
-        "Music": 20,
+        "Music": 12,
         "Pets": 80,
         "Home supplies": 20,
-        "Hairdresser": 52,
+        "Hairdresser": 62,
         "Miscellaneous": 350,
         "Gym": 27
     });

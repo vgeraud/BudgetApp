@@ -6,6 +6,7 @@ const localStorageKey = "transactions";
 
 const TransactionsContextProvider = ({ children }) => {
     const [transactions, setTransactions] = useState([]);
+    const [selectedMonth, setSelectedMonth] = useState(null);
 
     useEffect(() => {
         const savedTransactions = loadFromLocalStorage(localStorageKey);
@@ -34,6 +35,8 @@ const TransactionsContextProvider = ({ children }) => {
 
     const value = {
         transactions,
+        selectedMonth,
+        setSelectedMonth,
         saveTransactions,
         updateTransaction
     };
